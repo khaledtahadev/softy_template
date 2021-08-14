@@ -1,0 +1,47 @@
+- var nameMan = { "Catherine Soft":"Managing Director", "Kelvin Wood":"Digital Marketer", "David Martin":"Website Manager" }
+section.testim#testim
+  .container
+    .head-section.text-center.mb-5.pb-2
+      h3.mb-3 What Do They Say ?
+      p.text-muted Donec tempus, sem non rutrum imperdiet, lectus orci fringilla nulla, at accumsan elit eros a turpis. Ut sagittis lectus libero
+    .row
+      //- Collumn One
+      each val, key in nameMan
+        .col-md-6.col-lg-4.mb-3.mb-lg-0
+          .card.pt-3.border-0.shadow
+            img(src="image/testimonial-icon.png", alt="img" height='32' width='32').m-auto
+            .card-body
+              p.text-muted Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio
+              .media.align-items-center
+                img(src="http://placehold.it/60x60", alt="img").mr-3.rounded-circle
+                .media-body
+                  h5.h6.m-1 #{key}
+                  p.text-secondary #{val}
+
+
+
+
+
+
+      //- Collumn Two
+      //- .col-md-6.col-lg-4.mb-3.mb-lg-0
+      //-   .card.pt-3.border-0.shadow
+      //-     img(src="image/testimonial-icon.png", alt="img" height='32' width='32').m-auto
+      //-     .card-body
+      //-       p.text-muted Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio
+      //-       .media.align-items-center
+      //-         img(src="http://placehold.it/60x60", alt="img").mr-3.rounded-circle
+      //-         .media-body
+      //-           h5.h6.m-1 Catherine Soft
+      //-           p.text-primary Managing Director
+      //- Collumn Three
+      //- .col-md-6.col-lg-4
+      //-   .card.pt-3.border-0.shadow
+      //-     img(src="image/testimonial-icon.png", alt="img" height='32' width='32').m-auto
+      //-     .card-body
+      //-       p.text-muted Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio
+      //-       .media.align-items-center
+      //-         img(src="http://placehold.it/60x60", alt="img").mr-3.rounded-circle
+      //-         .media-body
+      //-           h5.h6.m-1 Catherine Soft
+      //-           p.text-primary Managing Director
